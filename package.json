@@ -4,7 +4,7 @@
   "description": "A node.js module to hook into the netatmo API.",
   "main": "netatmo.js",
   "scripts": {
-    "test": "rm -rf ./node_modules && npm install && node test.js"
+    "test": "xo && rm -rf ./node_modules && npm install && node test.js"
   },
   "author": {
     "name": "Ali Karbassi",
@@ -26,5 +26,17 @@
   "dependencies": {
     "moment": "^2.18.1",
     "request": "^2.82.0"
+  },
+  "devDependencies": {
+    "xo": "^0.18.2"
+  },
+  "xo": {
+    "space": true,
+    "envs": [
+      "node"
+    ],
+    "rules": {
+      "camelcase": 0
+    }
   }
 }
